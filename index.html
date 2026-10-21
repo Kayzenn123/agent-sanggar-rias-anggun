@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanggar Rias Anggun — Salon &amp; Bridal Kuningan</title>
+<meta name="description" content="Sanggar Rias Anggun Salon & Bridal — rias pengantin, salon, dan dekorasi acara. Jl. Karang Anyar No.164, Kuningan. Konsultasi & booking via WhatsApp 0813-5261-4839.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#faf6f0;
+  --ivory-2:#f4ece2;
+  --rose:#b76e79;
+  --rose-deep:#9a5560;
+  --rose-soft:rgba(183,110,121,.10);
+  --plum:#3a2430;
+  --plum-soft:#6e5a64;
+  --gold-line:#e3cfc0;
+  --wa:#1faa55;
+  --wa-deep:#14803e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:var(--ivory);color:var(--plum);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+
+/* ---- topbar ---- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,246,240,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--gold-line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:13px 22px;gap:12px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand-name{font-weight:800;font-size:1.02rem;letter-spacing:.02em;color:var(--plum)}
+.brand-sub{display:block;font-size:.72rem;font-weight:500;color:var(--plum-soft);letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-rose{background:linear-gradient(140deg,var(--rose),var(--rose-deep));color:#fff;box-shadow:0 8px 26px rgba(183,110,121,.35)}
+.btn-rose:hover{box-shadow:0 10px 32px rgba(183,110,121,.45)}
+.btn-line{border-color:var(--gold-line);color:var(--plum);background:#fff}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 26px rgba(31,170,85,.30)}
+.btn-sm{padding:10px 18px;font-size:.85rem}
+
+/* ---- hero ---- */
+.hero{padding:84px 0 64px;background:
+  radial-gradient(760px 340px at 88% 4%,rgba(183,110,121,.14),transparent 65%),
+  radial-gradient(560px 300px at 4% 96%,rgba(183,110,121,.08),transparent 60%)}
+.hero-eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,6.4vw,3.7rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;max-width:16ch}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--rose-deep)}
+.hero .lead{color:var(--plum-soft);font-size:1.06rem;max-width:58ch;margin:18px 0 28px}
+.hero-addr{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid var(--gold-line);border-radius:16px;padding:16px 18px;max-width:620px;margin-bottom:30px;font-size:.95rem;color:var(--plum-soft)}
+.hero-addr svg{flex:none;margin-top:3px;color:var(--rose)}
+.hero-addr b{color:var(--plum)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- section shells ---- */
+section{padding:64px 0}
+.sec-kicker{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:10px}
+.sec-title{font-size:clamp(1.5rem,3.6vw,2.1rem);font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+.sec-sub{color:var(--plum-soft);margin-bottom:30px;max-width:60ch}
+.band{background:var(--ivory-2);border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line)}
+
+/* ---- layanan ---- */
+.grid{display:grid;gap:18px}
+.svc-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.svc{background:#fff;border:1px solid var(--gold-line);border-radius:22px;padding:28px 24px;position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(154,85,96,.12)}
+.svc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose),var(--rose-deep));opacity:.85}
+.svc .icon{width:52px;height:52px;border-radius:16px;background:var(--rose-soft);display:flex;align-items:center;justify-content:center;color:var(--rose-deep);margin-bottom:16px}
+.svc h3{font-size:1.14rem;font-weight:800;margin-bottom:8px}
+.svc p{font-size:.94rem;color:var(--plum-soft)}
+.price-line{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:.85rem;font-weight:700;color:var(--rose-deep);background:var(--rose-soft);border:1px dashed var(--rose);border-radius:999px;padding:7px 14px}
+
+/* ---- tiktok ---- */
+.tiktok-cta{background:var(--plum);border-radius:26px;padding:clamp(28px,5vw,52px);color:#f6efe7;position:relative;overflow:hidden}
+.tiktok-cta::after{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(183,110,121,.35),transparent 70%)}
+.tt-inner{position:relative;z-index:1;max-width:640px}
+.tt-inner h2{font-size:clamp(1.5rem,3.6vw,2.1rem);font-weight:800;margin-bottom:10px}
+.tt-inner p{color:#cdbfca;font-size:.98rem;margin-bottom:8px}
+.tt-stats{display:flex;gap:32px;margin:22px 0 28px;flex-wrap:wrap}
+.tt-stats b{display:block;font-size:1.7rem;font-weight:800;color:#fff}
+.tt-stats span{font-size:.82rem;color:#b9a9b0}
+.btn-tt{background:#fff;color:var(--plum);font-weight:800}
+.btn-tt:hover{background:#fdf7f2}
+
+/* ---- kontak ---- */
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.person{background:#fff;border:1px solid var(--gold-line);border-radius:20px;padding:24px}
+.person .role{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rose-deep);background:var(--rose-soft);border-radius:8px;padding:4px 10px;margin-bottom:10px}
+.person .role.primary{background:linear-gradient(140deg,var(--rose),var(--rose-deep));color:#fff}
+.person h3{font-size:1.25rem;font-weight:800;letter-spacing:.01em}
+.person p{font-size:.88rem;color:var(--plum-soft);margin:4px 0 16px}
+.person .btn{width:100%;justify-content:center}
+
+/* ---- info ---- */
+.info-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.info-card h3{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:10px}
+.info-card p{font-size:1rem}
+.info-card .btn{margin-top:14px}
+
+/* ---- jam ---- */
+.hours{background:#fff;border:1px solid var(--gold-line);border-radius:20px;padding:26px 24px;display:flex;gap:16px;align-items:flex-start}
+.hours .icon{flex:none;width:48px;height:48px;border-radius:14px;background:var(--rose-soft);display:flex;align-items:center;justify-content:center;color:var(--rose-deep)}
+.hours p{font-size:.96rem;color:var(--plum-soft)}
+.hours p b{color:var(--plum)}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--gold-line);padding:32px 0 140px;color:var(--plum-soft);font-size:.84rem}
+footer .wrap{display:flex;flex-direction:column;gap:10px}
+.disclaimer{background:#fff;border:1px dashed var(--gold-line);border-radius:14px;padding:14px 18px;font-size:.82rem}
+
+/* ---- floating WA ---- */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60}
+.fab a{display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;font-weight:800;text-decoration:none;padding:15px 22px;border-radius:999px;box-shadow:0 12px 34px rgba(31,170,85,.45)}
+.fab a:active{transform:scale(.95)}
+
+@media(max-width:560px){
+  .hero{padding:60px 0 48px}
+  section{padding:48px 0}
+  .cta-row .btn{flex:1;justify-content:center}
+  .fab a span{display:none}
+  .fab a{padding:17px;border-radius:50%}
+}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:6px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Sanggar Rias Anggun — beranda">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="#b76e79" stroke-width="2"/>
+        <path d="M20 9c3.4 4.6 3.4 17.4 0 22M20 9c-3.4 4.6-3.4 17.4 0 22" stroke="#b76e79" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M12.5 15.5c2.6-1.2 5.2 1.2 7.5 1.2s4.9-2.4 7.5-1.2" stroke="#9a5560" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="20" cy="27.5" r="2.2" fill="#b76e79"/>
+      </svg>
+      <span><span class="brand-name">Sanggar Rias Anggun</span><span class="brand-sub">Salon &amp; Bridal</span></span>
+    </a>
+    <a class="btn btn-rose btn-sm" href="https://wa.me/6281352614839?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap">
+      <p class="hero-eyebrow">Salon · Rias Pengantin · Dekorasi Acara</p>
+      <h1>Tampil anggun di hari <em>paling istimewa</em> Anda.</h1>
+      <p class="lead">Sanggar Rias Anggun — salon dan sanggar rias pengantin di Kuningan. Dari perawatan sehari-hari sampai riasan dan dekorasi pernikahan, semua dalam satu tempat.</p>
+      <div class="hero-addr">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span><b>Jl. Karang Anyar No.164, RT.4/RW.3, Jagabaya Pasapen III</b>, Kec. Kuningan, Kab. Kuningan 45511</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-rose" href="https://wa.me/6281352614839?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+        <a class="btn btn-line" href="#layanan">Lihat layanan</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="layanan">
+    <div class="wrap">
+      <p class="sec-kicker">Layanan kami</p>
+      <h2 class="sec-title">Semua kebutuhan cantik, satu pintu</h2>
+      <p class="sec-sub">Harga tidak dipublikasikan — tanya langsung via WhatsApp untuk penawaran yang pas dengan kebutuhan Anda.</p>
+      <div class="grid svc-grid">
+        <article class="svc">
+          <div class="icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5M14.5 14.5 20 20M8.5 8.5 12 12"/></svg>
+          </div>
+          <h3>Salon</h3>
+          <p>Perawatan rambut dan kecantikan sehari-hari — potong, styling, dan perawatan lengkap.</p>
+          <span class="price-line">Harga: Tanya via WA</span>
+        </article>
+        <article class="svc">
+          <div class="icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.5 1-1a5.5 5.5 0 0 0 0-7.9z"/></svg>
+          </div>
+          <h3>Rias Pengantin</h3>
+          <p>Riasan pengantin lengkap — tradisional maupun modern, sesuai adat dan selera Anda.</p>
+          <span class="price-line">Harga: Tanya via WA</span>
+        </article>
+        <article class="svc">
+          <div class="icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 11h.01M15 11h.01"/></svg>
+          </div>
+          <h3>Dekorasi Acara</h3>
+          <p>Dekorasi pelaminan dan venue acara — backdrop, bunga, dan penataan ruang.</p>
+          <span class="price-line">Harga: Tanya via WA</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="portofolio">
+    <div class="wrap">
+      <p class="sec-kicker">Portofolio</p>
+      <h2 class="sec-title">Lihat hasil karya kami</h2>
+      <p class="sec-sub">Ribuan video riasan dan dekorasi terdokumentasi di TikTok — lihat sendiri sebelum memutuskan.</p>
+      <div class="tiktok-cta">
+        <div class="tt-inner">
+          <h2>@sanggarriasanggun di TikTok</h2>
+          <p>Akun aktif yang terus memperbarui portofolio riasan pengantin dan dekorasi acara.</p>
+          <div class="tt-stats">
+            <div><b>3.516</b><span>pengikut</span></div>
+            <div><b>1.268</b><span>video</span></div>
+          </div>
+          <a class="btn btn-tt" href="https://www.tiktok.com/@sanggarriasanggun" target="_blank" rel="noopener">Buka TikTok kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="wrap">
+      <p class="sec-kicker">Hubungi kami</p>
+      <h2 class="sec-title">Konsultasi &amp; booking</h2>
+      <p class="sec-sub">Chat langsung — ceritakan kebutuhan Anda, kami bantu rekomendasikan paket yang pas.</p>
+      <div class="grid contact-grid">
+        <article class="person">
+          <span class="role primary">Kontak utama</span>
+          <h3>0813-5261-4839</h3>
+          <p>Nomor resmi Sanggar Rias Anggun</p>
+          <a class="btn btn-wa" href="https://wa.me/6281352614839?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener">Chat sekarang</a>
+        </article>
+        <article class="person">
+          <span class="role">Admin</span>
+          <h3>0888-0691-3239</h3>
+          <p>Admin — dari bio TikTok resmi</p>
+          <a class="btn btn-line" href="https://wa.me/6288806913239?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener">Chat admin</a>
+        </article>
+        <article class="person">
+          <span class="role">Owner</span>
+          <h3>0812-8578-9080</h3>
+          <p>Owner — dari bio TikTok resmi</p>
+          <a class="btn btn-line" href="https://wa.me/6281285789080?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener">Chat owner</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" style="padding-top:0">
+    <div class="wrap">
+      <p class="sec-kicker">Lokasi &amp; jadwal</p>
+      <h2 class="sec-title">Kunjungi sanggar kami</h2>
+      <p class="sec-sub">Mampir langsung atau hubungi dulu untuk memastikan kami siap melayani.</p>
+      <div class="grid info-grid">
+        <div class="info-card">
+          <h3>Alamat</h3>
+          <p>Jl. Karang Anyar No.164, RT.4/RW.3, Jagabaya Pasapen III, Kec. Kuningan, Kab. Kuningan 45511</p>
+          <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=Sanggar+Rias+Anggun+Jl.+Karang+Anyar+164+Kuningan" target="_blank" rel="noopener">Buka di Google Maps</a>
+        </div>
+        <div class="info-card">
+          <h3>Jadwal</h3>
+          <p>Hubungi kami via WhatsApp untuk jadwal kunjungan dan booking tanggal acara.</p>
+        </div>
+      </div>
+      <div style="height:18px"></div>
+      <div class="hours">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        </div>
+        <p><b>Untuk acara pernikahan:</b> booking jauh-jauh hari disarankan, terutama untuk musim nikah. Chat sekarang untuk cek ketersediaan tanggal.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Sanggar Rias Anggun Salon &amp; Bridal</b> · Jl. Karang Anyar No.164, Kuningan</p>
+    <div class="disclaimer">Contoh website oleh Zenn (web designer Kuningan) — bukan situs resmi Sanggar Rias Anggun. Data dari sumber publik, dicek 21 Okt 2026. Harga: [ISI MANUAL] — tanya via WA.</div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://wa.me/6281352614839?text=Halo%20Sanggar%20Rias%20Anggun%2C%20saya%20mau%20tanya-tanya%20dulu%20tentang%20layanan%20salon%20dan%20rias%20pengantin." target="_blank" rel="noopener" aria-label="Chat WhatsApp Sanggar Rias Anggun">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+    <span>Chat WA</span>
+  </a>
+</div>
+
+</body>
+</html>
